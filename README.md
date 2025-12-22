@@ -22,6 +22,9 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 
 ### Joystick Base
 
+> [!NOTE]
+> The AliExpress links do not have the correct product options pre-selected. Please make sure to select the correct options according to the item description.
+
 | Quantity | Type | Size | Length | Description | Shop |
 |----------|------|------|--------|-------------|------|
 | 4 | Bearings | 10x26x8mm | | 4pcs Bearings 10x26x8mm (Inside diameter x Outside diameter x Width) | [Link](https://www.aliexpress.com/item/1005007668446060.html) |
