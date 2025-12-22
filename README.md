@@ -3,6 +3,19 @@ A glider flight simulation cockpit project. Includes 3D printable STL parts, bil
 
 This project was designed to be used with the **Condor 3** glider flight simulator.
 
+## Aluminium Profiles
+
+| Quantity | Type | Length (mm) | Usage |
+|----------|------|-------------|-------|
+| 1 | 4040 | 900 | main frame |
+| 1 | 4040 | 600 | side frame |
+| 3 | 2040 | 300 | vertical arms |
+| 1 | 2040 | 120 | front panel |
+| 3 | 2020 | 200 | sliders |
+| 1 | 2020 | 300 | joystick |
+| 2 | 2020 | 150 | pedals |
+| 1 | 2080 | 300 | feet rest |
+
 ## Photos
 
 ### Front View
