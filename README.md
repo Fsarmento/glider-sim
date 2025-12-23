@@ -58,6 +58,7 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 4 | Push Button Switch | 6x6x4.1 | | 4pcs Push Button Switch 4x4x4.1 DIP (4x4x4.3 is also ok) | [Link](https://pt.aliexpress.com/item/1005001629177989.html) |
 | 1 | 5-way Switch | 10x10x10 | | 1pc 5-way tactile switch 10x10x10 DIP | [Link](https://pt.aliexpress.com/item/4000681560472.html) |
 | 1 | Liquid Rubber | | | Silicon Liquid Rubber (buttons) | [Link](https://pt.aliexpress.com/item/1005008302473853.html) |
+| 1 | Black Pigment | | | Solid Color Black Pigment (buttons color) | [Link](https://pt.aliexpress.com/item/1005005830256537.html) |
 
 ### Rudder Pedals
 
