@@ -78,6 +78,15 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 2 | Option A: Springs | | 75 | 75x10x1.25mm Springs (Length x Outside Diameter x Wire Diameter) | [Link](https://pt.aliexpress.com/item/1005003939622047.html) |
 | 2 | Option B: Oil shock absorber | | 110 | oil shock absorber 110mm | [Link](https://pt.aliexpress.com/item/4000245803426.html) |
 
+
+> [!WARNING]
+> This BOM is still under development. The following sections are missing:
+> - Sliders
+> - 6 Button Case
+> - Trim
+> - Release
+> - Chair Holder
+> - Controller Box
 ## Credits
 
 The joystick handle design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
