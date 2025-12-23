@@ -8,6 +8,11 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 
 ## Bill of Materials (BOM)
 
+> [!NOTE]
+> The AliExpress links do not have the correct product options pre-selected. Please make sure to select the correct options according to the item description.
+
+
+
 ### Frame
 
 | Quantity | Type | Size | Length | Description | Shop |
@@ -26,9 +31,6 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 1 | Profile 90 deg connector | 2040B-6 | | L connector 2040B-6 (secondary slider) | [Link](https://pt.aliexpress.com/item/1005004312946435.html) |
 
 ### Joystick Base
-
-> [!NOTE]
-> The AliExpress links do not have the correct product options pre-selected. Please make sure to select the correct options according to the item description.
 
 | Quantity | Type | Size | Length | Description | Shop |
 |----------|------|------|--------|-------------|------|
