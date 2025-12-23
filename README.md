@@ -29,6 +29,7 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 2 | Profile 90 deg connector | 2020-2 L40 | | L connector 2020-2 L40 (sliders base) | [Link](https://pt.aliexpress.com/item/1005004312946435.html) |
 | 4 | Profile 90 deg connector | 2020-2 L20 | | L connector 2020-2 L20 (sliders base) | [Link](https://pt.aliexpress.com/item/1005004312946435.html) |
 | 1 | Profile 90 deg connector | 2040B-6 | | L connector 2040B-6 (secondary slider) | [Link](https://pt.aliexpress.com/item/1005004312946435.html) |
+| 3 | Telescopic Feet | | 16.5CM-28.5CM | Telescopic Feet 16.5CM-28.5CM | [Link](https://pt.aliexpress.com/item/1005007648713847.html) |
 
 ### Joystick Base
 
