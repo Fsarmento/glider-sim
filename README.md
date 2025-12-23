@@ -1,4 +1,6 @@
 # glider-sim
+
+![Glider Sim](photos/banner.jpg)
 A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, controller code, and assembly instructions.
 
 > [!NOTE]
