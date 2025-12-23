@@ -80,7 +80,9 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 
 ## Credits
 
-The joystick design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
+The joystick handle design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
+
+The joystick and rudder pedals were adapted from the [Flight-Simulator-Joystick](https://github.com/TomStanton/Flight-Simulator-Joystick) project, developed by Tom Stanton.
 
 ## Photos
 
