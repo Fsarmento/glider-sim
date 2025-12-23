@@ -43,7 +43,7 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 10 | Bolts | M5 | 20 | M5x20 Bolts | [Link](https://pt.aliexpress.com/item/32969034133.html) |
 | 15 | T-slot Nuts | M5 | | M5 T-slot Nuts | [Link](https://pt.aliexpress.com/item/1005007383347166.html) |
 | 2 | Magnets | 8x8x8 | | 8mm cube magnets | [Link](https://pt.aliexpress.com/item/1005009224525065.html) |
-| 2 | Hall Effect Sensor | | | Hall Effect Sensor SS496A1 | [Link](https://pt.aliexpress.com/item/1005008652267102.htm) |
+| 2 | Hall Effect Sensor | | | Hall Effect Sensor SS496A1 | [Link](https://pt.aliexpress.com/item/1005008652267102.html) |
 | 4 | Option A: Springs | | 75 | 75x10x1.25mm Springs (Length x Outside Diameter x Wire Diameter) | [Link](https://pt.aliexpress.com/item/1005003939622047.html) |
 | 4 | Option B: Oil shock absorber | | 110 | oil shock absorber 110mm | [Link](https://pt.aliexpress.com/item/1005005791841993.html) |
 | 4 | Option B: M3-M5 Adapter | M3-M5 | 10 | M3-M5 10mm Thread Adapter Screw Nuts | [Link](https://pt.aliexpress.com/item/1005007436046737.html) |
@@ -75,7 +75,7 @@ This project was designed to be used with the **Condor 3** glider flight simulat
 | 6 | Bolts | M3 | 20 | M3x18mm Bolts (link spacer/shock absorber) | [Link](https://pt.aliexpress.com/item/1005009149226092.html) |
 | 2 | Bolts | M3 | 16 | M3x16mm Bolts (Shock absorber) | [Link](https://pt.aliexpress.com/item/1005009149226092.html) |
 | 2 | Magnets | 8x8x8 | | 8mm cube magnets | [Link](https://pt.aliexpress.com/item/1005009224525065.html) |
-| 1 | Hall Effect Sensor | | | Hall Effect Sensor SS496A1 | [Link](https://pt.aliexpress.com/item/1005008652267102.htm) |
+| 1 | Hall Effect Sensor | | | Hall Effect Sensor SS496A1 | [Link](https://pt.aliexpress.com/item/1005008652267102.html) |
 | 2 | Option A: Springs | | 75 | 75x10x1.25mm Springs (Length x Outside Diameter x Wire Diameter) | [Link](https://pt.aliexpress.com/item/1005003939622047.html) |
 | 2 | Option B: Oil shock absorber | | 110 | oil shock absorber 110mm | [Link](https://pt.aliexpress.com/item/4000245803426.html) |
 
