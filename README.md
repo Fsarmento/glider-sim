@@ -1,6 +1,12 @@
 # glider-sim
 
 ![Glider Sim](photos/banner.jpg)
+
+---
+
+If you enjoy this project and want to say thanks, you can **buy me a beer** via [GitHub Sponsors](https://github.com/sponsors/Fsarmento). 🍺
+
+---
 A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, controller code, and assembly instructions.
 
 > [!NOTE]
