@@ -2,21 +2,24 @@
 
 ![Glider Sim](photos/banner.jpg)
 
+A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, controller code, and assembly instructions.
+
+This project was designed to be used with the **Condor 3** glider flight simulator.
+
 ---
 
 If you enjoy this project and want to say thanks, you can **buy me a beer** via [GitHub Sponsors](https://github.com/sponsors/Fsarmento). 🍺
 
 ---
-A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, controller code, and assembly instructions.
 
 > [!NOTE]
 > This page is still under construction and being updated with more information.
 
-This project was designed to be used with the **Condor 3** glider flight simulator.
+
 
 ## Bill of Materials (BOM)
 
-> [!NOTE]
+> [!IMPORTANT]
 > The AliExpress links do not have the correct product options pre-selected. Please make sure to select the correct options according to the item description.
 
 
