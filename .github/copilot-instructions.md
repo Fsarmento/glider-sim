@@ -45,8 +45,8 @@
 - Confirm license compatibility and add attribution where required.
 
 ## Tests / CI / automation notes ⚠️
-- There are no CI workflows or tests present. For automation, consider simple checks:
-  - filename sanitizer (no spaces),
+- A GitHub Actions workflow `.github/workflows/validate-stl-names.yml` runs on pull requests and push and **fails** if any filename or directory under `stl/` contains uppercase letters or spaces. The check script is at `scripts/validate_stl_names.py`.
+- Consider additional checks:
   - presence of `stl/<component>/README.md` when a new STL is added,
   - basic firmware build matrix if firmware is added.
 
