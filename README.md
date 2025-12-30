@@ -130,10 +130,10 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 
 > [!WARNING]
 > This BOM is still under development. The following sections are missing:
-> - 6 Button Case
-> - Trim
-> - Release
-> - Controller Box
+> - 6-buttons-box
+> - trim
+> - release
+> - controller-box
 ## Credits
 
 The joystick handle design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
