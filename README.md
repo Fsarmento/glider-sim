@@ -194,9 +194,6 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 > [!WARNING]
 > This project is still under development. The following sections are missing:
 > - folder with gerber files for pcb productions
-> - .ino code for main controller
-> - .ino code for joystick controller
-> - .ino code for 6-button controller
 > - mounting tips
 
 ## Credits
