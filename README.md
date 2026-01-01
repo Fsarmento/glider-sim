@@ -130,7 +130,7 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 | 1 | PCB glider-sim |  |  | PCB glider-sim | |
 
 
-### Trim
+### Trim lever
 
 | Quantity | Type | Size | Length | Description | Shop |
 |----------|------|------|--------|-------------|------|
@@ -139,7 +139,7 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 | 2 | T-slot Nuts | M5 |  | M5 T-slot Nuts | [Link](https://s.click.aliexpress.com/e/_c3ZBusUH) |
 
 
-### Release
+### Tow release
 
 | Quantity | Type | Size | Length | Description | Shop |
 |----------|------|------|--------|-------------|------|
