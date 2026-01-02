@@ -186,7 +186,7 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 
 | Quantity | Type | Size | Length | Description | Shop |
 |----------|------|------|--------|-------------|------|
-| 2 | Crab Clamp | 26AWG | 10m | 26AWG servo extension cable 10m | [Link](https://s.click.aliexpress.com/e/_c3AXPQ6B) |
+| 2 | Cables | 26AWG | 10m | 26AWG servo extension cable 10m | [Link](https://s.click.aliexpress.com/e/_c3AXPQ6B) |
 | 12 | Connectors |  |  | servo JR Male connectors (set of 20) | [Link](https://s.click.aliexpress.com/e/_c2uRVjab) |
 
 
