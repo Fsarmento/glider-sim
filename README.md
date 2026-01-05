@@ -194,6 +194,8 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 
 This project includes three **electronic** modules: the main controller, the stick buttons controller, and the 6‑button box controller.
 
+---
+
 ### Main controller (Glider_sim_main)
 
 The main controller collects all joystick axes, sliders, pedals, buttons and external box inputs and exposes them to the PC as a USB HID joystick.
@@ -201,6 +203,8 @@ It is built around an Arduino Pro Micro based on the ATmega32U4 running at 5 V /
 
 All external signals (potentiometers, Hall sensors, end‑switches and button matrices) connect to this board through pin headers and JST/servo‑style connectors to ease wiring and maintenance.
 The PCB can be ordered from JLCPCB ([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)) using the provided GERBER files for approximately 7 €, and all components are intended to be assembled manually by soldering through‑hole and basic SMD parts.
+
+---
 
 ### Stick buttons controller (Glider_sim_stick_buttons)
 
@@ -216,6 +220,8 @@ In the PCB‑based version, a small custom PCB holds the 5‑way switch and four
 In the no‑PCB version, the 3D printed part `buttons-support-no-pcb.stl` mechanically supports all five buttons, and the ESP32‑C3 Supermini is wired point‑to‑point to each switch using flexible hookup wire and then fixed inside the handle with hot glue.
 This option is cheaper but requires more careful manual soldering and routing because of the tight internal space.
 
+---
+
 ### 6‑button box controller (Glider_sim_6_buttons)
 
 The 6‑button box provides six generic push buttons that can be mapped to any simulator function, for example views, trim presets or radio shortcuts.
@@ -227,12 +233,6 @@ Depending on which button is pressed, the circuit sets a different duty / analog
 The PCB for this module can be manufactured at JLCPCB ([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)) using the provided GERBER files for around 7 €, and all components are intended to be soldered manually.
 The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to secure the PCB, making maintenance and button replacement straightforward.
 
-
-
-> [!WARNING]
-> This project is still under development. The following sections are missing:
-> - folder with gerber files for pcb productions
-> - mounting tips
 
 ## Credits
 
