@@ -59,7 +59,6 @@ const uint8_t SWITCH_PINS[] = {
 
 
 const uint8_t BUTTONS6_PINS[] = {
-
   10,  // Aux 2 - 6 botões
   16,  // Aux 3 - 6 botões
 };
