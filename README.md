@@ -203,7 +203,7 @@ The main controller collects all joystick axes, sliders, pedals, buttons and ext
 It is built around an Arduino Pro Micro based on the ATmega32U4 running at 5 V / 16 MHz, which integrates native USB support and simplifies the joystick firmware implementation.
 
 All external signals (potentiometers, Hall sensors, end‑switches and button matrices) connect to this board through pin headers and JST/servo‑style connectors to ease wiring and maintenance.
-The PCB can be ordered from JLCPCB ([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)) using the provided GERBER files for approximately 7 €, and all components are intended to be assembled manually by soldering through‑hole and basic SMD parts.
+The PCB can be ordered from [JLCPCB]([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)) using the provided GERBER files for approximately 7 €, and all components are intended to be assembled manually by soldering through‑hole and basic SMD parts.
 
 ---
 
@@ -216,7 +216,7 @@ The ESP32‑C3 Supermini runs internally at 3.3 V logic level but can be powered
 This architecture reduces the number of wires going through the moving stick, since only power, ground and a single serial data line are required between the handle and the main controller.
 
 Two assembly options are provided for the stick electronics.
-In the PCB‑based version, a small custom PCB holds the 5‑way switch and four push buttons; this PCB can be manufactured and partially assembled at JLCPCB ([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)), including the tactile switches, for a cost around 30 €.
+In the PCB‑based version, a small custom PCB holds the 5‑way switch and four push buttons; this PCB can be manufactured and partially assembled at [JLCPCB]([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)), including the tactile switches, for a cost around 30 €.
 
 In the no‑PCB version, the 3D printed part `buttons-support-no-pcb.stl` mechanically supports all five buttons, and the ESP32‑C3 Supermini is wired point‑to‑point to each switch using flexible hookup wire and then fixed inside the handle with hot glue.
 This option is cheaper but requires more careful manual soldering and routing because of the tight internal space.
@@ -239,7 +239,7 @@ The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to s
 
 The joystick handle design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
 
-The joystick and rudder pedals were adapted from the [Flight-Simulator-Joystick](https://github.com/TomStanton/Flight-Simulator-Joystick) project, developed by Tom Stanton.
+The joystick and rudder pedals were adapted from the [Flight-Simulator-Joystick](https://github.com/TomStanton/Flight-Simulator-Joystick) project, developed by Tim Station.
 
 ## Photos
 
