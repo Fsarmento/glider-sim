@@ -231,7 +231,7 @@ This module is built around an ESP32‑C3 Supermini, but in this case the commun
 Instead, the 6‑button box drives a single analog line going to the main controller.
 Depending on which button is pressed, the circuit sets a different duty / analog value on this line (in the 0–255 range), and the Arduino Pro Micro interprets this value to identify which of the six buttons is active.
 
-The PCB for this module can be manufactured at JLCPCB ([https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote)) using the provided GERBER files for around 7 €, and all components are intended to be soldered manually.
+The PCB for this module can be manufactured at [JLCPCB](https://cart.jlcpcb.com/quote) using the provided GERBER files for around 7 €, and all components are intended to be soldered manually.
 The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to secure the PCB, making maintenance and button replacement straightforward.
 
 
