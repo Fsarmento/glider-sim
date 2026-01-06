@@ -199,6 +199,8 @@ This project includes three **electronic** modules: the main controller, the sti
 
 ### Main controller (Glider_sim_main)
 
+![Glider_sim_main](PCB/Glider_sim_main/Glider_sim_main%201.png)
+
 The main controller collects all joystick axes, sliders, pedals, buttons and external box inputs and exposes them to the PC as a USB HID joystick.
 It is built around an Arduino Pro Micro based on the ATmega32U4 running at 5 V / 16 MHz, which integrates native USB support and simplifies the joystick firmware implementation.
 
@@ -208,6 +210,8 @@ The PCB can be ordered from [JLCPCB](https://cart.jlcpcb.com/quote) using the pr
 ---
 
 ### Stick buttons controller (Glider_sim_stick_buttons)
+
+![Glider_sim_stick_buttons](PCB/Glider_sim_stick_buttons/Glider_sim_stick.png)
 
 The stick head contains one 5‑way joystick‑type tactile switch plus four front push buttons, with an optional fifth rear push button for additional functions such as push‑to‑talk or wheel brake.
 Due to limited space inside the handle, these buttons are read by a dedicated ESP32‑C3 Supermini module, which communicates with the main controller over a one‑way UART link.
@@ -224,6 +228,8 @@ This option is cheaper but requires more careful manual soldering and routing be
 ---
 
 ### 6‑button box controller (Glider_sim_6_buttons)
+
+![Glider_sim_6_buttons](PCB/Glider_sim_6_buttons/glider_sim_6_buttons%201.png)
 
 The 6‑button box provides six generic push buttons that can be mapped to any simulator function, for example views, trim presets or radio shortcuts.
 This module is built around an ESP32‑C3 Supermini, but in this case the communication with the main controller does not use the same serial protocol as the stick buttons.
