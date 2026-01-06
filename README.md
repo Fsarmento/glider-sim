@@ -2,8 +2,7 @@
 
 ![Glider Sim](photos/banner.jpg)
 
-A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, controller code, and assembly instructions.
-
+A glider flight simulation cockpit project. Includes 3D printable STL parts, bill of materials, and controller code.
 This project was designed to be used with the **Condor 3** glider flight simulator.
 
 ---
@@ -13,8 +12,7 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 ---
 
 > [!NOTE]
-> This page is still under construction and being updated with more information.
-
+> If you have any questions about this project, please use the [Discussions](https://github.com/Fsarmento/glider-sim/discussions) section. I'll try to answer them.
 
 
 ## Bill of Materials (BOM)
@@ -189,6 +187,9 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 | 2 | Cables | 26AWG | 10m | 26AWG servo extension cable 10m | [Link](https://s.click.aliexpress.com/e/_c3AXPQ6B) |
 | 12 | Connectors |  |  | servo JR Male connectors (set of 20) | [Link](https://s.click.aliexpress.com/e/_c2uRVjab) |
 
+
+> [!TIP]
+> To understand how the Hall sensors work and how they should be installed, watch this video: [https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu](https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu)
 
 ## Electronics overview
 
