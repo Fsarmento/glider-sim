@@ -25,11 +25,18 @@ All 3D drawings are located in the `/stl` folder, organized into subfolders to m
 
 The links in the BOM list often point to sets, such as screw kits, where a single set contains the materials needed for multiple BOM lines.
 
-The main controller uses an Arduino Pro Micro and is detected by the PC as a standard joystick. The stick buttons and each 6-button box use ESP32-C3 Supermini controllers. To simplify assembly without taking up much space, I designed 3 PCBs and provide the GERBER files in ZIP format in the `/PCB` folder. Nowadays, it is so easy and affordable to have PCBs manufactured that it makes sense to have boards custom-sized to your needs. To have the boards produced, simply go to the JLCPCB website [https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote) and upload the zip file. You do not need to change any of the default options on the site. With the cheapest shipping method, the production and shipping of each PCB costs around €7. In the case of the stick buttons, as space is very limited, I could only fit everything using SMD (surface-mount) buttons, which are harder to solder. For this reason, I suggest using the PCBA service to assemble the front of the PCB already with the buttons supplied by JLCPCB. To do this, at the bottom of the JLCPCB page [https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote), simply enable the "PCB Assembly" option and on the next page upload the BOM and CPL files provided inside the `/PCB` folder.
+
+For position sensing, the rudder pedals and joystick gimbal use linear Hall effect sensors (SS496A1), the sliders use 10-turn 10kΩ potentiometers, the trim lever uses a standard B10K potentiometer, and the tow release uses an end-switch commonly found in 3D printers.
+
+
+The main controller uses an Arduino Pro Micro and is detected by the PC as a standard joystick. The stick buttons and each 6-button box use ESP32-C3 Supermini controllers. To simplify assembly without taking up much space, I designed 3 PCBs and provide the GERBER files in ZIP format in the `/PCB` folder. Nowadays, it is so easy and affordable to have PCBs manufactured that it makes sense to have boards custom-sized to your needs. To have the boards produced, simply go to the [JLCPCB](https://cart.jlcpcb.com/quote) website and upload the zip file. You do not need to change any of the default options on the site. With the cheapest shipping method, the production and shipping of each PCB costs around €7. In the case of the stick buttons, as space is very limited, I could only fit everything using SMD (surface-mount) buttons, which are harder to solder. For this reason, I suggest using the PCBA service to assemble the front of the PCB already with the buttons supplied by JLCPCB. To do this, at the bottom of the JLCPCB PCB configuration page, simply enable the "PCB Assembly" option and on the next page upload the BOM and CPL files provided inside the `/PCB` folder.
 
 The code to upload to each controller is located inside the `/scripts` folder. You can use the Arduino IDE to upload the code to each controller.
 
 I hope you enjoy assembling the cockpit and "flying" as much as I did!
+
+> [!TIP]
+> To understand how the Hall sensors work and how they should be installed, watch this video by Tim Station: [https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu](https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu)
 
 ## Bill of Materials (BOM)
 
@@ -83,10 +90,12 @@ I hope you enjoy assembling the cockpit and "flying" as much as I did!
 | 4 | M2-M4 Adapter | M2-M4 | 8 | M2-M4  8mm Thread Adapter Screw Nuts | [Link](https://pt.aliexpress.com/item/1005007436046737.html) |
 | 4 | Flat Bolts | M2 | 10 | M2x10 Flat Countersunk Head Bolt  | [Link](https://s.click.aliexpress.com/e/_c368gRLJ) |
 | 1 | Controller ESP32-C3 |  |  | ESP32-C3 Supermini | [Link](https://s.click.aliexpress.com/e/_c2RvZ7EN) |
-| 4 | Push Button Switch | 6x6x4.1 |  | Push Button Switch  4x4x4.1 DIP (4x4x4.3 is also ok) | [Link](https://s.click.aliexpress.com/e/_c4dK0HMX) |
-| 1 | 5-way Switch | 10x10x10 |  | 5-way tactile switch 10x10x10 DIP | [Link](https://s.click.aliexpress.com/e/_c458W5dT) |
 | 1 | Liquid Rubber |  |  | Silicon Liquid Rubber (buttons) | [Link](https://s.click.aliexpress.com/e/_c4Xd5cIh) |
 | 1 | Black Pigment |  |  | Solid Color Black Pigment (buttons color) | [Link](https://pt.aliexpress.com/item/1005005830256537.html) |
+| 1 | Option A: PCB stick-buttons |  |  | PCB stick-buttons | |
+| 1 | Option A: Connector |  |  | JST-XH 2.54 connectors | [Link](https://s.click.aliexpress.com/e/_c3qvb13l) |
+| 4 | Option B: Push Button Switch | 6x6x4.1 |  | (If  using 3D printed part instead of PCB) Push Button Switch  4x4x4.1 DIP (4x4x4.3 is also ok) | [Link](https://s.click.aliexpress.com/e/_c4dK0HMX) |
+| 1 | Option B: 5-way Switch | 10x10x10 |  | (If  using 3D printed part instead of PCB) 5-way tactile switch 10x10x10 DIP | [Link](https://s.click.aliexpress.com/e/_c458W5dT) |
 
 
 ### Rudder pedals:
@@ -203,9 +212,6 @@ I hope you enjoy assembling the cockpit and "flying" as much as I did!
 | 2 | Cables | 26AWG | 10m | 26AWG servo extension cable 10m | [Link](https://s.click.aliexpress.com/e/_c3AXPQ6B) |
 | 12 | Connectors |  |  | servo JR Male connectors (set of 20) | [Link](https://s.click.aliexpress.com/e/_c2uRVjab) |
 
-
-> [!TIP]
-> To understand how the Hall sensors work and how they should be installed, watch this video: [https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu](https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu)
 
 ## Electronics overview
 
