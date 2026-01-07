@@ -15,6 +15,22 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 > If you have any questions about this project, please use the [Discussions](https://github.com/Fsarmento/glider-sim/discussions) section. I'll try to answer them.
 
 
+
+## Introduction
+
+This project uses aluminum profiles for the structure, 3D-printed parts, three PCBs to simplify electronic assembly, and accessories that can be easily purchased online from AliExpress or Banggood.
+To assemble this cockpit, you will need a 3D printer and a soldering iron for electronics.
+
+All 3D drawings are located in the `/stl` folder, organized into subfolders to make it easier to identify which module they belong to. I used PLA with 20% infill for all parts.
+
+The links in the BOM list often point to sets, such as screw kits, where a single set contains the materials needed for multiple BOM lines.
+
+The main controller uses an Arduino Pro Micro and is detected by the PC as a standard joystick. The stick buttons and each 6-button box use ESP32-C3 Supermini controllers. To simplify assembly without taking up much space, I designed 3 PCBs and provide the GERBER files in ZIP format in the `/PCB` folder. Nowadays, it is so easy and affordable to have PCBs manufactured that it makes sense to have boards custom-sized to your needs. To have the boards produced, simply go to the JLCPCB website [https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote) and upload the zip file. You do not need to change any of the default options on the site. With the cheapest shipping method, the production and shipping of each PCB costs around €7. In the case of the stick buttons, as space is very limited, I could only fit everything using SMD (surface-mount) buttons, which are harder to solder. For this reason, I suggest using the PCBA service to assemble the front of the PCB already with the buttons supplied by JLCPCB. To do this, at the bottom of the JLCPCB page [https://cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote), simply enable the "PCB Assembly" option and on the next page upload the BOM and CPL files provided inside the `/PCB` folder.
+
+The code to upload to each controller is located inside the `/scripts` folder. You can use the Arduino IDE to upload the code to each controller.
+
+I hope you enjoy assembling the cockpit and "flying" as much as I did!
+
 ## Bill of Materials (BOM)
 
 > [!IMPORTANT]
