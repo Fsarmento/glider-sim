@@ -263,6 +263,20 @@ The PCB for this module can be manufactured at [JLCPCB](https://cart.jlcpcb.com/
 The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to secure the PCB, making maintenance and button replacement straightforward.
 
 
+## Condor 3 Setup
+
+The joystick will appear on the PC as a standard joystick. Before first use, go to Windows **Game Controller Settings** and calibrate the joystick and sliders.
+
+Command assignments to Condor 3 functions can be performed directly in the Condor 3 setup. Personally, I prefer to only assign the analog inputs (joystick, rudder, and sliders) directly in Condor 3 and use the **JoyToKey** software to map the joystick buttons to predefined commands in Condor 3.
+
+In Condor 3, the Gear command to raise and lower the landing gear is a single key press and cannot be assigned to a slider. To use the right slider to control the Gear, I configured it in JoyToKey as follows:
+- Slider1(<0) -> G
+- Slider1(>0) -> G
+
+This way, moving the right slider from one end to the other is equivalent to pressing the G key, which raises or lowers the landing gear.
+
+---
+
 ## Credits
 
 The joystick handle design was adapted from the [OpenVario Remote Stick project](https://www.openvario.org/doku.php?id=projects:remote_00:top), created by the OpenVario community.
