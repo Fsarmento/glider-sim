@@ -16,6 +16,31 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 
 
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Bill of Materials (BOM)](#bill-of-materials-bom)
+  - [Frame](#frame)
+  - [Joystick base](#joystick-base)
+  - [Joystick controller](#joystick-controller)
+  - [Rudder pedals](#rudder-pedals)
+  - [Sliders](#sliders-up-to-3-sets-airbreaks-flaps-and-gear)
+  - [Controller box](#controller-box)
+  - [Trim lever](#trim-lever)
+  - [Tow release](#tow-release)
+  - [6-buttons box](#6-buttons-box-up-to-2-sets)
+  - [Chair holder](#chair-holder)
+  - [Wiring & connectors](#wiring--connectors)
+- [Electronics overview](#electronics-overview)
+  - [Main controller](#main-controller-glider_sim_main)
+  - [Stick buttons controller](#stick-buttons-controller-glider_sim_stick_buttons)
+  - [6-button box controller](#6button-box-controller-glider_sim_6_buttons)
+- [Condor 3 Setup](#condor-3-setup)
+- [Credits](#credits)
+- [Photos](#photos)
+
+---
+
 ## Introduction
 
 This project uses aluminum profiles for the structure, 3D-printed parts, three PCBs to simplify electronic assembly, and accessories that can be easily purchased online from AliExpress or Banggood.
@@ -267,7 +292,7 @@ The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to s
 
 The joystick will appear on the PC as a standard joystick. Before first use, go to Windows **Game Controller Settings** and calibrate the joystick and sliders.
 
-Command assignments to Condor 3 functions can be performed directly in the Condor 3 setup. Personally, I prefer to only assign the analog inputs (joystick, rudder, and sliders) directly in Condor 3 and use the **JoyToKey** software to map the joystick buttons to predefined commands in Condor 3.
+Command assignments to Condor 3 functions can be performed directly in the Condor 3 setup. Personally, I prefer to only assign the analog inputs (joystick, rudder, and sliders) directly in Condor 3 and use the **JoyToKey** software to map the joystick buttons to predefined keyboard input commands in Condor 3.
 
 In Condor 3, the Gear command to raise and lower the landing gear is a single key press and cannot be assigned to a slider. To use the right slider to control the Gear, I configured it in JoyToKey as follows:
 - Slider1(<0) -> G
