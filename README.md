@@ -35,7 +35,7 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
   - [Main controller](#main-controller-glider_sim_main)
   - [Stick buttons controller](#stick-buttons-controller-glider_sim_stick_buttons)
   - [6-button box controller](#6button-box-controller-glider_sim_6_buttons)
-- [Condor 3 Setup](#condor-3-setup)
+- [Connections and Setup](#connections-and-setup)
 - [Credits](#credits)
 - [Photos](#photos)
 
@@ -288,9 +288,17 @@ The PCB for this module can be manufactured at [JLCPCB](https://cart.jlcpcb.com/
 The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to secure the PCB, making maintenance and button replacement straightforward.
 
 
-## Condor 3 Setup
+## Connections and Setup
 
-The joystick will appear on the PC as a standard joystick. Before first use, go to Windows **Game Controller Settings** and calibrate the joystick and sliders.
+The main controller must be connected to all modules before performing calibration in Windows and configuration in Condor 3. The main board is connected to the PC via the USB port and is detected as a standard HID joystick.
+
+- The joystick controller (ESP32‑C3 in the stick head) must be connected to the main board on connector **JB** (Joystick Buttons), using the **RX** pin on the main board to receive the UART signal from the ESP32‑C3.
+- The joystick Hall sensors must be connected to the main controller on inputs **JX** (pin 4 / A6) and **JY** (pin 6 / A7), corresponding to the X and Y axes of the stick.
+- The analog inputs such as sliders and the trim lever must be connected to **RU** (pin 8 / A8), **BR** (pin 9 / A9), **FL** (pin 21 / A3), **TR** (pin 20 / A2) and **GR** (pin 19 / A1).
+- The auxiliary inputs **Aux1** (pin 18 / A0) and **Aux4** (pin 14) are **I/O** inputs configured as **INPUT_PULLUP**, suitable for switches like the tow release; the other terminal of the switch must be connected to **GND**.
+- The auxiliary inputs **Aux2** (pin 10 / A10) and **Aux3** (pin 16) are **PWM** inputs where up to two ESP32‑C3 controllers from the 6‑button boxes can be connected.
+
+After wiring everything, go to Windows **Game Controller Settings** and calibrate the joystick and sliders.
 
 Command assignments to Condor 3 functions can be performed directly in the Condor 3 setup. Personally, I prefer to only assign the analog inputs (joystick, rudder, and sliders) directly in Condor 3 and use the **JoyToKey** software to map the joystick buttons to predefined keyboard input commands in Condor 3.
 
