@@ -101,7 +101,7 @@ void setup() {
 
   // Start comunication for debuging
   // Serial.begin(115200);
-  // Start comunication with stick and menu buttons
+  // Start comunication with stick
   Serial1.begin(115200);
 }
 
@@ -116,15 +116,15 @@ void loop() {
       int state = Serial1.parseInt();
 
       if (button >= 20) {
-        Joystick.setHatSwitch(button - 20, state);
-      } else if (button >= 0 && button <= 5) {  // Stick configurável até 6 botoes
+        Joystick.setHatSwitch(button - 20, state);  // HAT switch
+      } else if (button >= 0 && button <= 5) {      // Stick configurável até 6 botoes
         Joystick.setButton(button, state);
       }
     }
   }
 
 
-  // Read Switches from board
+  // Read Switches from board (Aux1 and Aux 4)
   for (size_t i = 0; i < sizeof(SWITCH_PINS); i++) {
     int currentButtonState = !digitalRead(SWITCH_PINS[i]);
     if (currentButtonState != lastSwitchState[i]) {
@@ -154,6 +154,7 @@ void loop() {
         for (int b = 0; b < 6; b++) {
           Joystick.setButton(baseButtonIndex + b, 0);
         }
+        // set button active if pressed button is detected
         if (level > 0 && level <= 6) {
           Joystick.setButton(baseButtonIndex + (level - 1), 1);
         }
@@ -164,7 +165,7 @@ void loop() {
 
 
   // Output Controls
-  // Joystick.setXAxis(sampleMaxValue - overSample(LINEAR_PINS[0]));  // inverte sinal no eixo x
+  // Joystick.setXAxis(sampleMaxValue - overSample(LINEAR_PINS[0]));  // invert signal on X (otherwise change magnet polarity)
   Joystick.setXAxis(overSample(LINEAR_PINS[0]));
   Joystick.setYAxis(overSample(LINEAR_PINS[1]));
   Joystick.setZAxis(overSample(LINEAR_PINS[2]));

@@ -15,6 +15,54 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 > If you have any questions about this project, please use the [Discussions](https://github.com/Fsarmento/glider-sim/discussions) section. I'll try to answer them.
 
 
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Bill of Materials (BOM)](#bill-of-materials-bom)
+  - [Frame](#frame)
+  - [Joystick base](#joystick-base)
+  - [Joystick controller](#joystick-controller)
+  - [Rudder pedals](#rudder-pedals)
+  - [Sliders](#sliders-up-to-3-sets-airbreaks-flaps-and-gear)
+  - [Controller box](#controller-box)
+  - [Trim lever](#trim-lever)
+  - [Tow release](#tow-release)
+  - [6-buttons box](#6-buttons-box-up-to-2-sets)
+  - [Chair holder](#chair-holder)
+  - [Wiring & connectors](#wiring--connectors)
+- [Electronics overview](#electronics-overview)
+  - [Main controller](#main-controller-glider_sim_main)
+  - [Stick buttons controller](#stick-buttons-controller-glider_sim_stick_buttons)
+  - [6-button box controller](#6button-box-controller-glider_sim_6_buttons)
+- [Connections and Setup](#connections-and-setup)
+- [Credits](#credits)
+- [Photos](#photos)
+
+---
+
+## Introduction
+
+This project uses aluminum profiles for the structure, 3D-printed parts, three PCBs to simplify electronic assembly, and accessories that can be easily purchased online from AliExpress or Banggood.
+To assemble this cockpit, you will need a 3D printer and a soldering iron for electronics.
+
+All 3D drawings are located in the `/stl` folder, organized into subfolders to make it easier to identify which module they belong to. I used PLA with 20% infill for all parts.
+
+The links in the BOM list often point to sets, such as screw kits, where a single set contains the materials needed for multiple BOM lines.
+
+
+For position sensing, the rudder pedals and joystick gimbal use linear Hall effect sensors (SS496A1), the sliders use 10-turn 10kΩ potentiometers, the trim lever uses a standard B10K potentiometer, and the tow release uses an end-switch commonly found in 3D printers.
+
+
+The main controller uses an Arduino Pro Micro and is detected by the PC as a standard joystick. The stick buttons and each 6-button box use ESP32-C3 Supermini controllers. To simplify assembly without taking up much space, I designed 3 PCBs and provide the GERBER files in ZIP format in the `/PCB` folder. Nowadays, it is so easy and affordable to have PCBs manufactured that it makes sense to have boards custom-sized to your needs. To have the boards produced, simply go to the [JLCPCB](https://cart.jlcpcb.com/quote) website and upload the zip file. You do not need to change any of the default options on the site. With the cheapest shipping method, the production and shipping of each PCB costs around €7. In the case of the stick buttons, as space is very limited, I could only fit everything using SMD (surface-mount) buttons, which are harder to solder. For this reason, I suggest using the PCBA service to assemble the front of the PCB already with the buttons supplied by JLCPCB. To do this, at the bottom of the JLCPCB PCB configuration page, simply enable the "PCB Assembly" option and on the next page upload the BOM and CPL files provided inside the `/PCB` folder.
+
+The code to upload to each controller is located inside the `/scripts` folder. You can use the Arduino IDE to upload the code to each controller.
+
+I hope you enjoy assembling the cockpit and "flying" as much as I did!
+
+> [!TIP]
+> To understand how the Hall sensors work and how they should be installed, watch this video by Tim Station: [https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu](https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu)
+
 ## Bill of Materials (BOM)
 
 > [!IMPORTANT]
@@ -67,10 +115,12 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 | 4 | M2-M4 Adapter | M2-M4 | 8 | M2-M4  8mm Thread Adapter Screw Nuts | [Link](https://pt.aliexpress.com/item/1005007436046737.html) |
 | 4 | Flat Bolts | M2 | 10 | M2x10 Flat Countersunk Head Bolt  | [Link](https://s.click.aliexpress.com/e/_c368gRLJ) |
 | 1 | Controller ESP32-C3 |  |  | ESP32-C3 Supermini | [Link](https://s.click.aliexpress.com/e/_c2RvZ7EN) |
-| 4 | Push Button Switch | 6x6x4.1 |  | Push Button Switch  4x4x4.1 DIP (4x4x4.3 is also ok) | [Link](https://s.click.aliexpress.com/e/_c4dK0HMX) |
-| 1 | 5-way Switch | 10x10x10 |  | 5-way tactile switch 10x10x10 DIP | [Link](https://s.click.aliexpress.com/e/_c458W5dT) |
 | 1 | Liquid Rubber |  |  | Silicon Liquid Rubber (buttons) | [Link](https://s.click.aliexpress.com/e/_c4Xd5cIh) |
 | 1 | Black Pigment |  |  | Solid Color Black Pigment (buttons color) | [Link](https://pt.aliexpress.com/item/1005005830256537.html) |
+| 1 | Option A: PCB stick-buttons |  |  | PCB stick-buttons | |
+| 1 | Option A: Connector |  |  | JST-XH 2.54 connectors | [Link](https://s.click.aliexpress.com/e/_c3qvb13l) |
+| 4 | Option B: Push Button Switch | 6x6x4.1 |  | (If  using 3D printed part instead of PCB) Push Button Switch  4x4x4.1 DIP (4x4x4.3 is also ok) | [Link](https://s.click.aliexpress.com/e/_c4dK0HMX) |
+| 1 | Option B: 5-way Switch | 10x10x10 |  | (If  using 3D printed part instead of PCB) 5-way tactile switch 10x10x10 DIP | [Link](https://s.click.aliexpress.com/e/_c458W5dT) |
 
 
 ### Rudder pedals:
@@ -188,9 +238,6 @@ If you enjoy this project and want to say thanks, you can **buy me a beer** via 
 | 12 | Connectors |  |  | servo JR Male connectors (set of 20) | [Link](https://s.click.aliexpress.com/e/_c2uRVjab) |
 
 
-> [!TIP]
-> To understand how the Hall sensors work and how they should be installed, watch this video: [https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu](https://youtu.be/XcKmBWGFUn8?t=36&si=NRGCK4p2wdxqQ4Bu)
-
 ## Electronics overview
 
 This project includes three **electronic** modules: the main controller, the stick buttons controller, and the 6‑button box controller.
@@ -240,6 +287,28 @@ Depending on which button is pressed, the circuit sets a different duty / analog
 The PCB for this module can be manufactured at [JLCPCB](https://cart.jlcpcb.com/quote) using the provided GERBER files for around 7 €, and all components are intended to be soldered manually.
 The enclosure is fully 3D printed and uses heat‑insert nuts and M2 screws to secure the PCB, making maintenance and button replacement straightforward.
 
+
+## Connections and Setup
+
+The main controller must be connected to all modules before performing calibration in Windows and configuration in Condor 3. The main board is connected to the PC via the USB port and is detected as a standard HID joystick.
+
+- The joystick controller (ESP32‑C3 in the stick head) must be connected to the main board on connector **JB** (Joystick Buttons), using the **RX** pin on the main board to receive the UART signal from the ESP32‑C3.
+- The joystick Hall sensors must be connected to the main controller on inputs **JX** (pin 4 / A6) and **JY** (pin 6 / A7), corresponding to the X and Y axes of the stick.
+- The analog inputs such as sliders and the trim lever must be connected to **RU** (pin 8 / A8), **BR** (pin 9 / A9), **FL** (pin 21 / A3), **TR** (pin 20 / A2) and **GR** (pin 19 / A1).
+- The auxiliary inputs **Aux1** (pin 18 / A0) and **Aux4** (pin 14) are **I/O** inputs configured as **INPUT_PULLUP**, suitable for switches like the tow release; the other terminal of the switch must be connected to **GND**.
+- The auxiliary inputs **Aux2** (pin 10 / A10) and **Aux3** (pin 16) are **PWM** inputs where up to two ESP32‑C3 controllers from the 6‑button boxes can be connected.
+
+After wiring everything, go to Windows **Game Controller Settings** and calibrate the joystick and sliders.
+
+Command assignments to Condor 3 functions can be performed directly in the Condor 3 setup. Personally, I prefer to only assign the analog inputs (joystick, rudder, and sliders) directly in Condor 3 and use the **JoyToKey** software to map the joystick buttons to predefined keyboard input commands in Condor 3.
+
+In Condor 3, the Gear command to raise and lower the landing gear is a single key press and cannot be assigned to a slider. To use the right slider to control the Gear, I configured it in JoyToKey as follows:
+- Slider1(<0) -> G
+- Slider1(>0) -> G
+
+This way, moving the right slider from one end to the other is equivalent to pressing the G key, which raises or lowers the landing gear.
+
+---
 
 ## Credits
 
