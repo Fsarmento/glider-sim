@@ -335,3 +335,31 @@ The joystick and rudder pedals were adapted from the [Flight-Simulator-Joystick]
 
 ### Gear & Trim
 ![Gear & Trim](photos/gear&trim.jpg)
+
+### PCBs Front
+
+![PCBs Front](photos/pcbs_front.jpg)
+
+### PCBs Back
+
+![PCBs Back](photos/pcbs_back.jpg)
+
+### Stick Buttons
+
+![Stick Buttons](photos/stick_buttons.jpg)
+
+### Stick Buttons Assembly
+
+![Stick Buttons Assembly](photos/stick_buttons_assembly.jpg)
+
+### Stick Buttons Options
+
+![Stick Buttons Options](photos/stick_buttons_options.jpg)
+
+### Stick Buttons Options (Back)
+
+![Stick Buttons Options (Back)](photos/stick_buttons_options_back.jpg)
+
+### Stick Option STL
+
+![Stick Option STL](photos/stick_option_stl.jpg)
